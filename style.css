@@ -1,0 +1,43 @@
+* {
+    background: lightblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+}
+    h1 {
+        padding: .1rem;
+    }
+
+#container {
+    display: flex;
+}
+
+#left-section {
+    flex: 1;
+}
+
+    #city-input, #city-name, #left-section, button {
+        margin: 3px;
+        padding: 6px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+#right-section {
+    flex: 2;
+}
+
+#todays-weather {
+    margin-bottom: 2rem;
+}
+
+
+    #five-day-forecase {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
