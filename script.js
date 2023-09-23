@@ -66,8 +66,11 @@ function fetchData(city){
     fetch(todayApiUrl).then((response) => {
         // If network response is not ok, throw an error
         if (!response.ok) {
+            // Throw error if network response is not 200-299
             throw new error('There was a problem in loading this page');
         }
+        /* If the response.ok property is true, meaning the HTTP request was successful, this line of
+        code parses the JSON content of the HTTP response body and returns it as a JavaScript object. */
         return response.json();
     })
     // Grab data within URL
@@ -98,8 +101,11 @@ function fetchData(city){
     // Check network response when fetching the 'forecastApiUrl'
     fetch(forecastApiUrl).then((response) => {
         if (!response.ok) {
+            // Throw error if network response is not 200-299
             throw new Error('There was a problem in loading this page');
         }
+        /* If the response.ok property is true, meaning the HTTP request was successful, this line of
+        code parses the JSON content of the HTTP response body and returns it as a JavaScript object. */
         return response.json();
     })
     // Grab data within URL
