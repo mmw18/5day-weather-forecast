@@ -1,43 +1,6 @@
-* {
-    background: lightblue;
-    font-family: 'Times New Roman', Times, serif;
+/* Custom styling for each day <div> of te 5-day forecast information */
+.forecast-day {
+    background-color: #f0f8ff; /* Very light green color background */
+    border: 1px solid #000; /* Black border with 1px width */
+    padding: 10px; /* Adding space around content */
 }
-
-header {
-    text-align: center;
-}
-    h1 {
-        padding: .1rem;
-    }
-
-#container {
-    display: flex;
-}
-
-#left-section {
-    flex: 1;
-}
-
-    #city-input, #city-name, #left-section, button {
-        margin: 3px;
-        padding: 6px;
-        text-align: center;
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-#right-section {
-    flex: 2;
-}
-
-#todays-weather {
-    margin-bottom: 2rem;
-}
-
-
-    #five-day-forecast {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-

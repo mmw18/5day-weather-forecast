@@ -4,63 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>5 Day Weather Forecast</title>
 </head>
 <body>
-    <header>
+    <!-- Header with BootStrap Styling(background color, text position&color, and passing to top and bottom) -->
+    <header class="bg-primary text-white text-center py-4">
         <h1>5-Day Weather Forecast</h1>
     </header>
-
-    <section id="container">
-        <div id="left-section">
-            <h3>Select A Location</h3>
-            <label for="city-input">City: </label>
-            <input type="text" id="city-input">
-            <button id="submitBtn">Submit</button>
-            <div id="city-buttons-container">
+    <!-- Container to hold all of page info, and styling for main page -->
+    <section id="container" class="container mt-4">
+        <div class="row"> 
+            <!-- Left Section -->
+            <div id="left-section" class="col-md-4">
+                <h3>Select A Location</h3>
+                <div class="form-group">
+                    <label for="city-input">City: </label>
+                    <input type="text" id="city-input" class="form-control">
+                </div>
+                <button id="submitBtn" type="button" class="btn btn-primary btn-block">Submit</button>
+                <div id="city-buttons-container" class="mt-4">
+                </div>
+            </div>
+            
+            <!-- Right Section, holding today's current weather information -->
+            <div id="right-section" class="col-md-8">
+                <div id="todays-weather" class="bg-light p-4">
+                    <!-- Content for the today's weather goes here -->
+                </div>
             </div>
         </div>
-        <div id="right-section">
-            <div id="todays-weather">
-                <!-- <h2 id="city-name"> Austin </h2> -->
-            </div>
-            <div id="five-day-forecast">
-                    <!-- <div class="days">
-                        <h3 class="weather" id="dayOne"></h3>
-                        <div class="image"><img src="./Images/placeholder.jpeg"></div>
-                        <p class="minTemp" id="dayOneMin">Loading..</p>
-                        <p class="maxTemp" id="dayOneMax">Loading..</p>
-                    </div>
-                    <div class="days">
-                        <h3 class="weather" id="dayTwo"></h3>
-                        <div class="image"><img src="./Images/placeholder.jpeg"></div>
-                        <p class="minTemp" id="dayTwoMin">Loading..</p>
-                        <p class="maxTemp" id="dayTwoMax">Loading..</p>
-                    </div>
-                    <div class="days">
-                        <h3 class="weather" id="dayThree"></h3>
-                        <div class="image"><img src="./Images/placeholder.jpeg"></div>
-                        <p class="minTemp" id="dayThreeMin">Loading..</p>
-                        <p class="maxTemp" id="dayThreeMax">Loading..</p>
-                    </div>
-                    <div class="days">
-                        <h3 class="weather" id="dayFour"></h3>
-                        <div class="image"><img src="./Images/placeholder.jpeg"></div>
-                        <p class="minTemp" id="dayFourMin">Loading..</p>
-                        <p class="maxTemp" id="dayFourMax">Loading..</p>
-                    </div>
-                    <div class="days">
-                        <h3 class="weather" id="dayFive"></h3>
-                        <div class="image"><img src="./Images/placeholder.jpeg"></div>
-                        <p class="minTemp" id="dayFiveMin">Loading..</p>
-                        <p class="maxTemp" id="dayFiveMax">Loading..</p>
-                    </div> -->
-            </div>
-        </div>
-
     </section>
 
-
+    <!-- Five-Day Forecast Section -->
+    <section id="five-day-forecast" class="container-fluid mt-4 row d-flex justify-content-between">
+        <!-- Content for the five-day forecast goes here -->
+    </section>
 
     <script src="./script.js"></script>
 </body>
