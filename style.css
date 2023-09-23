@@ -1,3 +1,7 @@
+/* Google font styling to whole page */
+* {
+    font-family: 'Inconsolata', monospace;
+}
 /* Custom styling for each day <div> of te 5-day forecast information */
 .forecast-day {
     background-color: #f0f8ff; /* Very light green color background */
