@@ -35,7 +35,7 @@ header {
 }
 
 
-    #five-day-forecase {
+    #five-day-forecast {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
